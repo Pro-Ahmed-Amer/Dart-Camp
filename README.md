@@ -1,21 +1,38 @@
-# **Dart Bootcamp Agenda By Ahmed Amer**
+# **Dart Documentation By " Ahmed Amer "**
 
 ****
 
-**<u>Reference</u> =>** https://www.tutorialspoint.com/dart_programming/index.htm
-**<u>Online Code Editor</u> =>** https://dartpad.dev/?null_safety=true
+**<u>[Online Code Editor](https://dartpad.dev/?null_safety=true)</u> =>** https://dartpad.dev/?null_safety=true
 
-****
+[Online Code Editor 2](https://replit.com/) => https://replit.com/
+
+**<u>[Reference](https://www.tutorialspoint.com/dart_programming/index.htm)</u> =>** https://www.tutorialspoint.com/dart_programming/index.htm
+
+********
 
 1-) What is Dart ? Who is create it ?
 
 Answer :
 
+**<u>Dart :</u>** is a programming language designed for client development, such as for the web and mobile apps. It is developed by Google and can also be used to build server and desktop applications. Dart is an object-oriented, class-based, garbage-collected language with C-style syntax.
+
+**[Developer](https://www.google.com/search?rlz=1C1GCEA_enIQ911IQ911&sxsrf=AOaemvJRRgecrjBH0KYo1chTa4qtbGzf8A:1641667033386&q=dart+programming+language+developer&sa=X&ved=2ahUKEwj4v_Si5qL1AhUFgv0HHcaKAtQQ6BMoAHoECDMQAg):** [Google](https://www.google.com/search?rlz=1C1GCEA_enIQ911IQ911&sxsrf=AOaemvJRRgecrjBH0KYo1chTa4qtbGzf8A:1641667033386&q=Google&stick=H4sIAAAAAAAAAONgVuLUz9U3MDFNNk9axMrmnp-fnpMKAMKapuoWAAAA&sa=X&ved=2ahUKEwj4v_Si5qL1AhUFgv0HHcaKAtQQmxMoAXoECDMQAw).
+
+**[Stable release](https://www.google.com/search?rlz=1C1GCEA_enIQ911IQ911&sxsrf=AOaemvJRRgecrjBH0KYo1chTa4qtbGzf8A:1641667033386&q=dart+programming+language+stable+release&sa=X&ved=2ahUKEwj4v_Si5qL1AhUFgv0HHcaKAtQQ6BMoAHoECEYQAg):** 2.15.1 / 14 December 2021; 23 days ago.
+
+**[Filename extensions](https://www.google.com/search?rlz=1C1GCEA_enIQ911IQ911&sxsrf=AOaemvJRRgecrjBH0KYo1chTa4qtbGzf8A:1641667033386&q=dart+programming+language+filename+extensions&sa=X&ved=2ahUKEwj4v_Si5qL1AhUFgv0HHcaKAtQQ6BMoAHoECDoQAg):** dart.
+
+**[Designed by](https://www.google.com/search?rlz=1C1GCEA_enIQ911IQ911&sxsrf=AOaemvJRRgecrjBH0KYo1chTa4qtbGzf8A:1641667033386&q=dart+programming+language+designed+by&sa=X&ved=2ahUKEwj4v_Si5qL1AhUFgv0HHcaKAtQQ6BMoAHoECEIQAg):** [Lars Bak](https://www.google.com/search?rlz=1C1GCEA_enIQ911IQ911&sxsrf=AOaemvJRRgecrjBH0KYo1chTa4qtbGzf8A:1641667033386&q=Lars+Bak&stick=H4sIAAAAAAAAAONgVuLSz9U3MC00qSyJX8TK4ZNYVKzglJgNAFu6_xEZAAAA&sa=X&ved=2ahUKEwj4v_Si5qL1AhUFgv0HHcaKAtQQmxMoAXoECEIQAw&biw=1536&bih=714&dpr=1.25) and [Kasper Lund.](https://www.google.com/search?rlz=1C1GCEA_enIQ911IQ911&sxsrf=AOaemvJRRgecrjBH0KYo1chTa4qtbGzf8A:1641667033386&q=Kasper+Lund&stick=H4sIAAAAAAAAAONgVuLVT9c3NEzPKMuuMjWzWMTK7Z1YXJBapOBTmpcCAF2km-gfAAAA&sa=X&ved=2ahUKEwj4v_Si5qL1AhUFgv0HHcaKAtQQmxMoAnoECEIQBA&biw=1536&bih=714&dpr=1.25)
+
+**[First appeared](https://www.google.com/search?rlz=1C1GCEA_enIQ911IQ911&sxsrf=AOaemvJRRgecrjBH0KYo1chTa4qtbGzf8A:1641667033386&q=dart+programming+language+first+appeared&sa=X&ved=2ahUKEwj4v_Si5qL1AhUFgv0HHcaKAtQQ6BMoAHoECCUQAg):** October 10, 2011; 10 years ago.
+
 ****
 
-2-) Camp output ? What can I do with if I learn Dart ?
+2-) Camp output ? What can I do if I learn Dart ?
 
 Answer :
+
+Well, You gonna deal with the Dart programming language with write the codes and read the codes with Dart. You can use it with **Flutter SDK** to build native cross-platform applications.  
 
 ****
 
@@ -123,7 +140,42 @@ Item : 5
 
 ****
 
-6-) Conditions :
+6-) Do While Loop :
+
+```dart
+do {  
+   Statement(s) to be executed;  
+} while (expression); 
+```
+
+```dart
+void main() { 
+   var n = 10; 
+   do { 
+      print(n); 
+      n--; 
+   }
+   while(n>=0); 
+} 
+```
+
+```
+10 
+9 
+8 
+7 
+6 
+5 
+4 
+3 
+2 
+1 
+0
+```
+
+****
+
+7-) Conditions :
 
 ```dart
 void main() { 
@@ -142,7 +194,48 @@ String is not empty
 
 ****
 
-7-) List :
+8-) Switch Case :
+
+```dart
+switch (value) {
+  case 0:
+    // do something
+    break;
+  case 1: 
+    // do something else
+    break;
+}
+```
+
+```dart
+void main() { 
+   var grade = "A"; 
+   switch(grade) { 
+      case "A": {  print("Excellent"); } 
+      break; 
+     
+      case "B": {  print("Good"); } 
+      break; 
+     
+      case "C": {  print("Fair"); } 
+      break; 
+     
+      case "D": {  print("Poor"); } 
+      break; 
+     
+      default: { print("Invalid choice"); } 
+      break; 
+   } 
+} 
+```
+
+```
+Excellent
+```
+
+****
+
+9-) List :
 
 ```dart
 void main() { 
@@ -157,7 +250,7 @@ void main() {
 
 ****
 
-8-) Map :
+10-) Map :
 
 ```dart
 void main() { 
@@ -185,7 +278,7 @@ void main() {
 
 ****
 
-9-) Functions :
+11-) Functions :
 
 ```dart
 void main() { 
@@ -202,7 +295,7 @@ this is function msg
 
 ****
 
-10-) Arrow Function
+12-) Arrow Function
 
 ```dart
 void main() { 
@@ -220,7 +313,7 @@ hello 123
 
 ****
 
-11-) OOP :
+13-) OOP :
 
 ```dart
 class Car {  
@@ -244,7 +337,7 @@ E1001
 
 ****
 
-12-) Classes :
+14-) Classes :
 
 ```dart
 class Student { 
@@ -270,155 +363,5 @@ This is a  test method1
 
 ****
 
-# Fixing The Code Assignment
-
-```dart
-class university (){
-  // This is global variables will used in all code
-  var ids;
-  var name
-  var password;
-  var adress;
-  var depatment
-  university(a, b, x,c, d, e) {
-    // This is not constractor
-    this.id = a
-    this.name = b;password = c;
-    address = d
-    this.department = e;
-    login();
-  }
-}}
-/ this is gonna make dispaly for all correct user information
-  display(i) {
-    print("ID : ${id[i]}");
-    print("Nam : ${name[i]}");
-    print("Age : ${pasword[j]}")
-    print("Adress : ${address[i]}");
-    print("Depatent : ${department[i]}")
-  }
-
-  correct() {
-    print("Sizng Pefect . . . \n");
-    var x = "Json";
-    var y = 20;
-    check(x, y);
-  }
-}}
-  incorrect() {
-    print("Someting Wrong In Arays Size Try Agin !!! \n");
-  }
-
-  check(username, pass,ids) {
-    for (var i = 1; i < id.legth; i+=2) {
-      if (name[i] == username && pasword[i] == pass) {
-        display(i);
-        breake
-        }      } else {
-        inncorrect()
-      }
-    }
-  }
-
-  logins() {
-    iff (id.length == name.length &
-        id..lenth = password.length &&
-        id.length == adress..length &
-        department.length == department.length) {
-      corect();
-    } else {
-      incorect();
-    }
-  }}
-}
-
-var main(a) {
-  {  //THis iS NOT Built-in function the programw gonna destroy it
-  var ids = {1, 2, 3, 4,6];
-  var nmes = ["Json", "Andrea", "Steve", "Jerrard"];
-  vr passwrds = [20, 30, 40, 50,7}
-  var addrsses = ["Baghdad", "UAE", "USA", "Turky"];
-  vr deparments = {"IT", "Software", "Network", "Hardware"];
-
-  univercidy students =
-      new university(idds, names, passwrds, addresse, departmets,ids);
-}}
-```
-
-
-
-# The Solution
-
-```dart
-class university {
-  // This is local variables will used in all class
-  var ids;
-  var name;
-  var password;
-  var address;
-  var department;
-
-  university(a, b, c, d, e) {
-    // This is constractor
-    this.ids = a;
-    this.name = b;
-    this.password = c;
-    this.address = d;
-    this.department = e;
-    login();
-  }
-
-// this is gonna make dispaly for all correct user information
-  display(i) {
-    print("ID : ${ids[i]}");
-    print("Name : ${name[i]}");
-    print("Age : ${password[i]}");
-    print("Address : ${address[i]}");
-    print("Department : ${department[i]}");
-  }
-
-  correct() {
-    print("Sizing Perfect . . . \n");
-    var x = "Jerrard";
-    var y = 50;
-    check(x, y);
-  }
-
-  incorrect() {
-    print("Somthing Wrong In Arrays Size Try Again !!! \n");
-  }
-
-  check(username, pass) {
-    for (var i = 0; i < ids.length; i += 1) {
-      if (name[i] == username && password[i] == pass) {
-        display(i);
-        break;
-      }
-    }
-  }
-
-  login() {
-    if (ids.length == name.length &&
-        ids.length == password.length &&
-        ids.length == address.length &&
-        ids.length == department.length) {
-      correct();
-    } else {
-      incorrect();
-    }
-  }
-}
-
-main() {
-  //This is Built-In function the programe gonna start from it
-  var ids = [1, 2, 3, 4];
-  var names = ["Json", "Andrea", "Steve", "Jerrard"];
-  var passwords = [20, 30, 40, 50];
-  var addresses = ["Baghdad", "UAE", "USA", "Turky"];
-  var departments = ["IT", "Software", "Network", "Hardware"];
-
-  university students =
-      new university(ids, names, passwords, addresses, departments);
-}
-```
+## 
 
