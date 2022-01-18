@@ -81,7 +81,7 @@ Well, You gonna deal with the Dart programming language with write the codes and
 
   ```dart
   main(){
-      string name = 'Steve'; 
+      String name = 'Steve'; 
       int n = 10;
       double x = 15.2; /* OR */ x = 15;
       const pi = 13.4;
@@ -185,6 +185,22 @@ void main() {
    } else { /* false */
       print('Empty String'); 
    } 
+   
+   /* we can use nested conditions */
+   if(condition){
+       if(condition){
+       	 if(condition){
+             // statement
+         }else{
+             // statement
+         }
+       }else{
+           // statement
+       }
+   }else{
+       // statement
+   }
+    
 }
 ```
 
@@ -203,6 +219,9 @@ switch (value) {
     break;
   case 1: 
     // do something else
+    break;
+  default:
+    // do something if not all before cases
     break;
 }
 ```
@@ -240,12 +259,66 @@ Excellent
 ```dart
 void main() { 
    var num_list = [1,2,3]; 
-   print(num_list); 
+   print(num_list);
+   
+   num_list.add(4); // add to list function
+   print(num_list);
+   
+   num_list.remove(1); // remove from list function
+   print(num_list);
+   
+   var lst= [1,2,3,4,5];
+    lst.forEach((i) {
+    print('i = ${i}');
+   });
+    /*
+     list_or_map.forEach((element) {
+     	// Statment
+     });
+    */
+   print("-" * 30);
+   var mylist = ['A', 'B', 3.14, true, 55];
+   print(mylist);
+   print("-" * 30);
+   mylist.insert(4, 44); // insert in specefic index
+   mylist.insert(6, 555);
+   mylist.insert(7, 777);
+   print(mylist);
+   print("-" * 30);
+   mylist.add(88); // after last index
+   mylist.add(99);
+   print(mylist);
+   print("-" * 30);
+   mylist.remove('A'); // remove the element
+   mylist.remove(55);
+   mylist.removeAt(0); // remove by index
+   for (var i = 0; i <= mylist.length - 1; i++) {
+     print("Value : ${mylist[i]}");
+   }
 }
 ```
 
 ```
 [1,2,3]
+[1, 2, 3, 4]
+[2, 3, 4]
+i = 1
+i = 2
+i = 3
+i = 4
+i = 5
+------------------------------
+[A, B, 3.14, true, 55]
+------------------------------
+[A, B, 3.14, true, 44, 55, 555, 777, 88, 99]
+------------------------------
+Value : 3.14
+Value : true
+Value : 44
+Value : 555
+Value : 777
+Value : 88
+Value : 99
 ```
 
 ****
@@ -254,26 +327,42 @@ void main() {
 
 ```dart
 void main() { 
-   var details = {'Usrname':'tom','Password':'pass@123'}; 
+   var details = {'Username':'tom','Password':'pass@123'}; 
    print(details); 
+   
+   details.remove('Username'); // remove from Map
+   print(details);
+    
+   details['test'] = '55'; // add to Map
+   print(details);
+    
+   details.forEach((key, value) {
+    print('Key = ${key}\nValue = ${value}');
+   });
 }
 ```
 
 ```
-{Usrname: tom, Password: pass@123}
+{Username: tom, Password: pass@123}
+{Password: pass@123}
+{Password: pass@123, test: 55}
+Key = Username
+Value = tom
+Key = Password
+Value = pass@123
 ```
 
 ```dart
 void main() { 
    var details = new Map(); 
-   details['Usrname'] = 'admin'; 
+   details['Username'] = 'admin'; 
    details['Password'] = 'admin@123'; 
    print(details); 
 } 
 ```
 
 ```
-{Usrname: admin, Password: admin@123}
+{Username: admin, Password: admin@123}
 ```
 
 ****
@@ -363,5 +452,5 @@ This is a  test method1
 
 ****
 
-## 
+
 
