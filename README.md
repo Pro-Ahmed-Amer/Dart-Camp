@@ -336,7 +336,10 @@ void main() {
    details['test'] = '55'; // add to Map
    print(details);
     
-   details.forEach((key, value) {
+   details.addAll({'Email': 'a@a.a'}); // add to Map using function build in
+   print(details);
+   
+   details.forEach((key, value) { // print Map content using forEach
     print('Key = ${key}\nValue = ${value}');
    });
 }
@@ -346,6 +349,7 @@ void main() {
 {Username: tom, Password: pass@123}
 {Password: pass@123}
 {Password: pass@123, test: 55}
+{Password: pass@123, test: 55, Email: a@a.a}
 Key = Username
 Value = tom
 Key = Password
@@ -370,16 +374,47 @@ void main() {
 11-) Functions :
 
 ```dart
-void main() { 
-   print(msg());
-}  
-msg() { 
-	print("this is function msg"); 
+void main() {
+  msg();
+  print(age());
+  print(name());
+  print(cond());
+  print(lst());
+  print(myMap());
 }
+
+msg(){ // void function without return
+  print('message');
+}
+
+int age(){ // integer function should return integer number
+  return 20;
+}
+
+String name(){ // string function should return string
+  return 'Ahmed';
+}
+
+bool cond(){ // boolean function should return true or false
+  return true;
+}
+
+List lst(){ // list function should return list
+  return [1,2,3,4,5];
+}
+Map myMap(){ // map function should return map
+  return {'one':'1', 'two':'2'};
+}
+
 ```
 
 ```
-this is function msg
+message
+20
+Ahmed
+true
+[1, 2, 3, 4, 5]
+{one: 1, two: 2}
 ```
 
 ****
@@ -387,17 +422,38 @@ this is function msg
 12-) Arrow Function
 
 ```dart
-void main() { 
-   printMsg(); 
-   print(test()); 
-}  
-printMsg()=> print("hello"); 
-int test()=>123;                       
-// returning function 
+void main() {
+  msg();
+  print(age());
+  print(name());
+  print(cond());
+  print(lst());
+  print(myMap());
+}
+/*
+	Note: This type of function work with single line statment
+*/
+msg() => print('message'); // arrow function with void type
+
+int age() => 20; // arrow function with integer type
+
+String name() => 'Ahmed'; // arrow function with string type
+
+bool cond() => true; // arrow function with boolean type
+
+List lst() => [1, 2, 3, 4, 5]; // arrow function with list type
+
+Map myMap() => {'one': '1', 'two': '2'}; // arrow function with map type
+
 ```
 
 ```
-hello 123
+message
+20
+Ahmed
+true
+[1, 2, 3, 4, 5]
+{one: 1, two: 2}
 ```
 
 ****
@@ -449,8 +505,4 @@ void main()    {
 This is a  test method
 This is a  test method1
 ```
-
-****
-
-
 
