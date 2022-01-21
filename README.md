@@ -280,15 +280,18 @@ void main() {
    var mylist = ['A', 'B', 3.14, true, 55];
    print(mylist);
    print("-" * 30);
+   
    mylist.insert(4, 44); // insert in specefic index
    mylist.insert(6, 555);
    mylist.insert(7, 777);
    print(mylist);
    print("-" * 30);
+   
    mylist.add(88); // after last index
    mylist.add(99);
    print(mylist);
    print("-" * 30);
+   
    mylist.remove('A'); // remove the element
    mylist.remove(55);
    mylist.removeAt(0); // remove by index
