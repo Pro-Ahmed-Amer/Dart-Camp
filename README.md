@@ -420,7 +420,7 @@ true
 {one: 1, two: 2}
 ```
 
-****
+***
 
 12-) Arrow Function
 
@@ -459,7 +459,55 @@ true
 {one: 1, two: 2}
 ```
 
-****
+```dart
+void main() {
+  print("main function");
+  print('-' * 30);
+  msg('error', '104');
+  print('-' * 30);
+//   var n = number();
+//   print(n);
+  print(number(10, 20));
+  print('-' * 30);
+  print(name('Ahmed'));
+  print('-' * 30);
+  print(result(true));
+  print('-' * 30);
+  print(lst([1, 2, 3]));
+  print('-' * 30);
+  print(mp({'username': 'GDSC'}));
+}
+
+void msg(error, n) => print(' - msg function ${n} -> ${error}');
+
+int number(x, y) => x + y;
+
+String name(username) => 'Hello ${username}';
+
+bool result(bool r) => r;
+
+List lst(List l) => l;
+
+Map mp(var m) => m;
+```
+
+```
+ main function
+------------------------------
+ - msg function 104 -> error
+------------------------------
+30
+------------------------------
+Hello Ahmed
+------------------------------
+true
+------------------------------
+[1, 2, 3]
+------------------------------
+{username: GDSC}
+```
+
+***
 
 13-) OOP :
 
