@@ -12,7 +12,7 @@
 
 1-) What is Dart ? Who is create it ?
 
-Answer :
+###### Answer :
 
 **<u>Dart :</u>** is a programming language designed for client development, such as for the web and mobile apps. It is developed by Google and can also be used to build server and desktop applications. Dart is an object-oriented, class-based, garbage-collected language with C-style syntax.
 
@@ -555,5 +555,89 @@ void main()    {
 ```
 This is a  test method
 This is a  test method1
+```
+
+***
+
+```dart
+class google {
+  var username;
+  var password;
+  var dept;
+  var lst;
+
+  google(a, b, c, d) {
+    //constractor
+    this.username = a;
+    this.password = b;
+    this.dept = c;
+    this.lst = d;
+    print('Welcome ${a} => ${b} => ${c} => ${d}');
+    employees();
+  }
+
+  employees() {
+    if (username == 'Ali' && password == '123') {
+      if (dept == 'web') {
+        dashboard_msg(dept);
+      } else if (dept == 'apps') {
+        dashboard_msg(dept);
+      } else {
+        error_msg();
+      }
+    } else {
+      error_msg();
+    }
+  }
+
+  dashboard_msg(dept) {
+    print('Welcome in Dashboard ${username}');
+    if (dept == 'web') {
+      web();
+    } else if (dept == 'apps') {
+      apps();
+    } else {
+      error_msg();
+    }
+  }
+
+  error_msg() {
+    print('This is Error message !!!');
+  }
+
+  web() {
+    print('- web department');
+    myList();
+  }
+
+  apps() {
+    print('- apps department');
+    myList();
+  }
+
+  myList() {
+    print('your list => ${lst}');
+  }
+
+} /* End Class */
+
+void main() {
+  var lst = [1, 2, 3, 4, 5];
+  google ob1 = new google('Ali', '123', 'web', lst);
+  print('-' * 30);
+  google ob2 = new google('Sarah', '111', 'apps', lst);
+}
+```
+
+Output:
+
+```
+Welcome Ali => 123 => web => [1, 2, 3, 4, 5]
+Welcome in Dashboard Ali
+- web department
+your list => [1, 2, 3, 4, 5]
+------------------------------
+Welcome Sarah => 111 => apps => [1, 2, 3, 4, 5]
+This is Error message !!!
 ```
 
