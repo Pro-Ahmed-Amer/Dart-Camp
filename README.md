@@ -374,6 +374,41 @@ void main() {
 
 ****
 
+```dart
+main() {
+  var json = [
+    {'id': 1, 'Name': 'Ahmed'},
+    {'id': 2, 'Name': 'Jason'},
+    {'id': 3, 'Name': 'Steve'},
+  ];
+  print(json);
+  print('-'*50);
+
+  json.forEach((i)=>{
+    print(i)
+  });
+  
+  print('-'*50);
+  var x = json[0];
+  print(x);
+  x.forEach((key, value) => {print('${key} => ${value}')});
+}
+```
+
+```
+[{id: 1, Name: Ahmed}, {id: 2, Name: Jason}, {id: 3, Name: Steve}]
+--------------------------------------------------
+{id: 1, Name: Ahmed}
+{id: 2, Name: Jason}
+{id: 3, Name: Steve}
+--------------------------------------------------
+{id: 1, Name: Ahmed}
+id => 1
+Name => Ahmed
+```
+
+***
+
 11-) Functions :
 
 ```dart
